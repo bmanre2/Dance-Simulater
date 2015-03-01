@@ -16,7 +16,7 @@ x.Part0=z
 x.Part1=b
 n=Instance.new("Weld",z)
 n.Part0=z
-n.Part1=game.Players.LocalPlayer.Character["Left Arm"]
+n.Part1=game.Players.LocalPlayer.Character["Right Arm"]
 n.C0=CFrame.new(0,1,0.5)
 --
 
