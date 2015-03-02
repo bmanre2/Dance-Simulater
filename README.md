@@ -43,10 +43,11 @@ weld.Part1=wed
 weld.C0=CFrame.new(0,0,-4) * CFrame.fromEulerAnglesXYZ(0,0,3.1)
 
 hold=Instance.new("Part",z)
-hold.Size = Vector3.new(0.5,0.5,0.5)
+hold.Size = Vector3.new(0.3,0.3,1)
 hold.Color = Color3.new(0,0,0)
+hold.Material = "Metal"
 
 holw=Instance.new("Weld",hold)
 holw.Part0=hold
 holw.Part1=z
-holw.C0=CFrame.new(0,0,-4)
+holw.C0=CFrame.new(0,03)
