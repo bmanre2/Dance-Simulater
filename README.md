@@ -52,4 +52,4 @@ Instance.new("CylinderMesh",hold)
 holw=Instance.new("Weld",hold)
 holw.Part0=hold
 holw.Part1=z
-holw.C0=CFrame.new(0,0,-3.5)
+holw.C0=CFrame.new(0,0,-3.7)
