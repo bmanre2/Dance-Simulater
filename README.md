@@ -47,8 +47,9 @@ hold.FormFactor = "Custom"
 hold.Size = Vector3.new(0.7,0.7,1.5)
 hold.Color = Color3.new(0,0,0)
 hold.Material = "Metal"
+Instance.new("CylinderMesh",hold)
 
 holw=Instance.new("Weld",hold)
 holw.Part0=hold
 holw.Part1=z
-holw.C0=CFrame.new(0,0,-4)
+holw.C0=CFrame.new(0,0,-3.5)
