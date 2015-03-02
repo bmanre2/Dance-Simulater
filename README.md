@@ -44,7 +44,7 @@ weld.C0=CFrame.new(0,0,-4) * CFrame.fromEulerAnglesXYZ(0,0,3.1)
 
 hold=Instance.new("Part",z)
 hold.FormFactor = "Custom"
-hold.Size = Vector3.new(0.6,0.6,1.5)
+hold.Size = Vector3.new(0.7,0.7,1.5)
 hold.Color = Color3.new(0,0,0)
 hold.Material = "Metal"
 
