@@ -1,43 +1,52 @@
-x=game.Players.LocalPlayer.Character
+x=workspace.Basictality
 z=Instance.new("Part",x)
 z.FormFactor = "Custom"
 z.Material = "Metal"
-z.Size = Vector3.new(0.5,0.5,1.5)
+z.Size = Vector3.new(0.5,0.5,7.5)
 z.Color = Color3.new(0,0,0)
 
-b=Instance.new("Part",z)
-b.Color = Color3.new(1,0,0)
-b.FormFactor = "Custom"
-b.Material = "Metal"
-b.Size = Vector3.new(0.6,0.6,0.6)
-
-x=Instance.new("Weld",b)
-x.Part0=z
-x.Part1=b
 n=Instance.new("Weld",z)
 n.Part0=z
 n.Part1=game.Players.LocalPlayer.Character["Right Arm"]
-n.C0=CFrame.new(0,1,0.5)
---
+n.C0=CFrame.new(0,1,3.5)
 
-	char = game.Players.LocalPlayer.Character
-	ra = char:FindFirstChild("Right Arm")
-	la = char:FindFirstChild("Left Arm")
-	torso = char.Torso
-	
-	if ra then
-		torso["Right Shoulder"].Part0 = nil
-		torso["Right Shoulder"].Part1 = nil
-		torso["Right Shoulder"].Name = "RSBlank"
+wed=Instance.new("WedgePart",x)
+wed.FormFactor = "Custom"
+wed.Size = Vector3.new(0.5,0.5,0.5)
+wed.Color = Color3.new(0,0,0)
+wed.Material = "Metal"
 
-		NewRS = Instance.new("Weld", torso)
-		NewRS.Name = "Control Right Shoulder"
-		
-		--ra.Name = "RA"
-		ra.TopSurface = "Smooth"
-		
-		NewRS.Part0 = torso
-		NewRS.Part1 = ra
-		
-		NewRS.C0 = CFrame.new(1.5, .5, 0) * CFrame.Angles(0, math.rad(-20), math.rad(40)) * CFrame.new(0, -.25, 0)
-	end
+pa=Instance.new("Part",x)
+pa.FormFactor = "Custom"
+pa.Size = Vector3.new(0.6,0.1,7.5)
+pa.Color = Color3.new(1,0,0)
+
+weld2=Instance.new("Weld",pa)
+weld2.Part0=pa
+weld2.Part1=z
+weld2.C0=CFrame.new(0,0,0)
+
+gr=Instance.new("Part",x)
+gr.Size = Vector3.new(0.1,0.1,0.1)
+gr.Color = Color3.new(0,0,0)
+gr.Material = "Metal"
+
+
+grw=Instance.new("Weld",gr)
+grw.Part0=z
+grw.Part1=gr
+grw.C0=CFrame.new(0,0,2.5)
+
+weld=Instance.new("Weld",wed)
+weld.Part0=z
+weld.Part1=wed
+weld.C0=CFrame.new(0,0,-4) * CFrame.fromEulerAnglesXYZ(0,0,3.1)
+
+hold=Instance.new("Part",z)
+hold.Size = Vector3.new(0.5,0.5,0.5)
+hold.Color = Color3.new(0,0,0)
+
+holw=Instance.new("Weld",hold)
+holw.Part0=hold
+holw.Part1=z
+holw.C0=CFrame.new(0,0,-4)
