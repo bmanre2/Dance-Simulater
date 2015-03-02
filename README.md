@@ -51,4 +51,4 @@ hold.Material = "Metal"
 holw=Instance.new("Weld",hold)
 holw.Part0=hold
 holw.Part1=z
-holw.C0=CFrame.new(0,0,-3)
+holw.C0=CFrame.new(0,0,-4)
